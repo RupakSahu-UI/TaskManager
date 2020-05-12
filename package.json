@@ -16,8 +16,7 @@
     "start": "webpack-dev-server --inline --hot",
     "test": "mocha --recursive --compilers js:babel-register"
   },
-  "author": "jiayi hu",
-  "license": "MIT",
+  "author": "Rupak Sahu",  
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.7.4",
