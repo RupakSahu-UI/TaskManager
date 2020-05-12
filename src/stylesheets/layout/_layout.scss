@@ -1,5 +1,5 @@
 .app {
-  background-color: white;
+  background-color: #fff;
   border-radius: 3px;
   box-shadow: -3px 6px 10px rgba(0, 0, 0, .2);
   margin: auto;
@@ -19,10 +19,12 @@
 }
 
 .app-title {
+  background: url('../images/logo.png') left center no-repeat; 
+  background-size: contain;  
   border-bottom: 1px solid rgba($gray-light, .2);
   border-top: 2px solid $primary;
   font-weight: 400;
   margin-bottom: .5em;
-  padding: .5em 1em;
+  padding: 1em;
   text-align: left;
 }

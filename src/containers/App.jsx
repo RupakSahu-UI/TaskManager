@@ -12,12 +12,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="react-kanban">
-        <h1 className="app-title">Rupak's todo's</h1>  
+        <h1 className="app-title"></h1>  
         <Lanes
           lanes={this.props.lanes}
-          onEditLane={this.props.onEditLane}          
-          /* Not required at this time. 
+          onEditLane={this.props.onEditLane}
           onDeleteLane={this.props.onDeleteLane}
+          /* Not required at this time. 
           onMoveLane={this.props.onMoveLane}
           */
         />
@@ -39,7 +39,7 @@ App.propTypes = {
   onCreateLane: PropTypes.func.isRequired,
   onEditLane: PropTypes.func.isRequired,
   onReset: PropTypes.func.isRequired,
-  //onDeleteLane: PropTypes.func.isRequired,  
+  onDeleteLane: PropTypes.func.isRequired,  
   //onMoveLane: PropTypes.func.isRequired,
   
 };

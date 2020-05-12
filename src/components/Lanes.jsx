@@ -9,7 +9,7 @@ export default class Lanes extends React.Component {
         lane={lane}
         onEditLane={this.props.onEditLane}
         onDeleteLane={this.props.onDeleteLane}
-        onMoveLane={this.props.onMoveLane}
+        //onMoveLane={this.props.onMoveLane}
       />
     );
 
@@ -25,5 +25,5 @@ Lanes.propTypes = {
   lanes: PropTypes.array.isRequired,
   onEditLane: PropTypes.func.isRequired,
   onDeleteLane: PropTypes.func.isRequired,
-  onMoveLane: PropTypes.func.isRequired,
+  //onMoveLane: PropTypes.func.isRequired,
 };

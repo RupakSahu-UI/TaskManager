@@ -49,7 +49,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   onCreateNote(laneId) {
-    const newNote = notesActions.createNote('New note');
+    const newNote = notesActions.createNote('');
     dispatch(newNote);
     dispatch(lanesActions.attachToLane(laneId, newNote.payload.id));
   },

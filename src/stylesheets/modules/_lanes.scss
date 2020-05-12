@@ -4,7 +4,7 @@
   margin-left: 3em;
 
   &:hover,
-  &:focus {
+  {
     background-color: $accent-ter;
   }
 }
@@ -61,35 +61,17 @@
   }
 
   &__delete {
-    background-color: $white;
-    border: 1px solid lighten($gray-light, 10%);
+    background-color: $white;    
     box-shadow: none;
-    color: $gray-dark;
-    height: 1em;
-    line-height: 1em;
-    padding: 0;
+    color: rgba(90, 80, 80, 0.3);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 5px;
     position: absolute;
-    right: .5em;
-    top: -.5em;
-    width: 1em;
-  }
-
-  &__drag {
-    background-color: $white;
-    background-image: url('../images/drag-cursor.png');
-    background-position: center;
-    border: 1px solid lighten($gray-light, 10%);
-    box-shadow: none;
-    cursor: move;
-    height: 1em;
-    padding: 0;
-    position: absolute;
-    right: 2em;
-    top: -.5em;
-    width: 1em;
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
+    right: 0;
+    top: 0;
+    vertical-align: sub;
+    border: none;   
+  }  
 }

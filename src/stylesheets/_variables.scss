@@ -1,5 +1,5 @@
 // Colors
-$primary: #00BCD4;
+$primary: #218881;
 $primary-dark: darken($primary, 10%);
 $primary-light: lighten($primary, 20%);
 $accent: #a6206a;
@@ -12,7 +12,7 @@ $gray-dark: #5a5050;
 $gray-light: #D7D7DD;
 
 $white: #fff;
-$white-opacity: rgba(#fff, .54);
+$white-opacity: rgba(#fff, .5);
 
 $text: $gray-dark;
 $error: $accent-sec;

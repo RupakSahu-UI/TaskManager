@@ -9,8 +9,13 @@ export default class Editable extends React.Component {
     this.selectToEnd = this.selectToEnd.bind(this);
   }
 
-  handleDelete() {
-    this.props.onDelete(this.props.id);
+  handleDelete() {    
+      var retVal = confirm("Do you want to delete the card?");
+      if( retVal == true ) {        
+          this.props.onDelete(this.props.id);
+      } else {         
+         return false;
+      }    
   }
 
   handleValueClick() {
@@ -39,6 +44,7 @@ export default class Editable extends React.Component {
     return (
       <input
         type="text"
+        required
         autoFocus
         className="editing"
         ref={this.selectToEnd}

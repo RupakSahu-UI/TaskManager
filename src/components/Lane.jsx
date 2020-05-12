@@ -13,13 +13,16 @@ export default class Lane extends React.Component {
   handleCreateNote() {
     this.props.onCreateNote(this.props.lane.id);
   }
-
-  handleDeleteLane() {
-    const lane = this.props.lane;
-    this.props.onDeleteLane(lane.id);
-    lane.notes.forEach(noteId => this.props.onDeleteNote(null, noteId));
+  handleDeleteLane() {    
+    var retVal = confirm("Do you want to delete the list?");
+    if( retVal == true ) {        
+        const lane = this.props.lane;
+        this.props.onDeleteLane(lane.id);
+        lane.notes.forEach(noteId => this.props.onDeleteNote(null, noteId));
+    } else {         
+       return false;
+    }    
   }
-
   handleDeleteNote(noteId) {
     this.props.onDeleteNote(this.props.lane.id, noteId);
   }
@@ -45,7 +48,7 @@ export default class Lane extends React.Component {
               onEdit={this.props.onEditLane}
               onValueClick={this.props.onEditLane}
             />
-            
+             <button className="lane__delete" onClick={this.handleDeleteLane}> x </button>
           </h2>
           <Notes
             notes={laneNotes}
@@ -70,9 +73,9 @@ Lane.propTypes = {
   connectDropTarget: PropTypes.func.isRequired,
   lane: PropTypes.object.isRequired,
   onCreateNote: PropTypes.func.isRequired,
-  //onDeleteLane: PropTypes.func.isRequired,
+  onDeleteLane: PropTypes.func.isRequired,
   onDeleteNote: PropTypes.func.isRequired,
-  //onEditLane: PropTypes.func.isRequired,
-  //onEditNote: PropTypes.func.isRequired,
-  //onMoveNote: PropTypes.func.isRequired,
+  onEditLane: PropTypes.func.isRequired,
+  onEditNote: PropTypes.func.isRequired,
+  onMoveNote: PropTypes.func.isRequired,
 };

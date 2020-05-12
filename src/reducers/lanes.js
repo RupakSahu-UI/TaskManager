@@ -5,7 +5,7 @@ import update from 'react-addons-update';
 const defaultState = [
   {
     id: uuid.v4(),
-    name: 'Todo',
+    name: 'To-Do',
     notes: [],
   },
   {
