@@ -27,7 +27,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
-    "eslint": "^2.3.0",
+    "eslint": "^7.0.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.1.0",
     "extract-text-webpack-plugin": "^2.1.2",
