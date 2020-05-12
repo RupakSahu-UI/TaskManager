@@ -1,8 +1,11 @@
 {
   "name": "react-kanban",
   "version": "0.1.1",
-  "description": "Kanban board build with ReactJS and Redux",
-  
+  "description": "To Do List ReactJS and Redux",
+  "repository": {
+    "type": "git",
+    "url": "github.com/RupakSahu-UI/TaskManager.git"
+  },
   "scripts": {
     "build": "npm run clean && NODE_ENV=production webpack",
     "clean": "rm -rf ./dist && mkdir ./dist ",
@@ -48,13 +51,13 @@
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
-    "localforage": "^1.7.3",
+    "localforage": "^1.4.0",
     "react": "^15.6.1",
     "react-addons-update": "^15.0.1",
-    "react-dnd": "^2.6.0",
-    "react-dnd-html5-backend": "^2.6.0",
+    "react-dnd": "^2.1.2",
+    "react-dnd-html5-backend": "^2.1.2",
     "react-dom": "^15.0.1",
-    "react-redux": "^5.1.2",
+    "react-redux": "^5.0.5",
     "redux": "^3.5.2",
     "uuid": "^2.0.1"
   }
